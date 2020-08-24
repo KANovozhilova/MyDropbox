@@ -1,0 +1,40 @@
+.button:hover {
+    -fx-background-color: #90caf9;
+    -fx-border-color: white;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+
+.button:pressed {
+    -fx-background-color: #90caf9;
+    -fx-border-color: none;
+}
+
+.table-view .filler, .tree-table-view .filler, .table-view .column-header, .tree-table-view .column-header {
+	-fx-size: 35;
+	-fx-border-style: null;
+	-fx-width: 0 0 2 0;
+	-fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header-background, .tree-table-view .column-header-background {
+	-fx-background-color: transparent;
+}
+
+.table-row-cell, .tree-table-row-cell {
+	-fx-cell-size: 25px;
+}
+
+.table-cell {
+	-fx-border-color: transparent;
+	-fx-border-width: 1;
+	-fx-alignment: TOP-CENTER;
+}
+
+#operationColumn, #infoColumn, #goToFileColumn, #deleteItemColumn {
+    -fx-alignment: TOP-CENTER;
+}

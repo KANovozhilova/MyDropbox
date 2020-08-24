@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpPane" layoutY="-1.0" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #134C45;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AuthWindowsController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="337.0" prefHeight="117.0" prefWidth="127.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="135.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="130.0" text="MyDropbox" textFill="#920109">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="561.0" prefHeight="46.0" prefWidth="239.0">
+         <children>
+            <Label text="Уже есть аккаунт?" textFill="#a0a2ab">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="signInScreenButton" mnemonicParsing="false" onAction="#openSignInScreen" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #920109;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="66.0" layoutY="117.0" prefHeight="388.0" prefWidth="676.0">
+         <children>
+            <Label fx:id="signInLabel" alignment="CENTER" prefHeight="27.0" prefWidth="560.0" text="" textFill="#920109">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/contact.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="loginText" prefHeight="39.0" prefWidth="255.0" promptText="Введите логин" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #a0a2ab; -fx-text-fill: #a0a2ab;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/lock.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <PasswordField id="passwordText" fx:id="passwordText" prefHeight="39.0" prefWidth="255.0" promptText="Введите пароль" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #a0a2ab; -fx-text-fill: #a0a2ab;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#startRegistration" prefHeight="36.0" prefWidth="250.0" style="-fx-background-color: #920109;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
